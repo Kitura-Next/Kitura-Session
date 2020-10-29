@@ -32,7 +32,7 @@
       </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="https://github.com/IBM-Swift/Kitura-Session/">
+          <a class="header-link" href="https://github.com/Kitura-Next/Kitura-Session/">
             <img class="header-icon" src="img/gh.png"/>
             View on GitHub
           </a>
@@ -106,17 +106,17 @@
           <div class="section-content">
             
             <p align="center">
-    <a href="http://kitura.io/">
-        <img src="https://raw.githubusercontent.com/IBM-Swift/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
+    <a href="http://kituranext.org/">
+        <img src="https://raw.githubusercontent.com/Kitura-Next/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
     </a>
 </p>
 
 <p align="center">
-    <a href="https://ibm-swift.github.io/Kitura-Session/index.html">
+    <a href="https://kitura-next.github.io/Kitura-Session/index.html">
     <img src="https://img.shields.io/badge/apidoc-KituraSession-1FBCE4.svg?style=flat" alt="APIDoc">
     </a>
-    <a href="https://travis-ci.org/IBM-Swift/Kitura-Session">
-    <img src="https://travis-ci.org/IBM-Swift/Kitura-Session.svg?branch=master" alt="Build Status - Master">
+    <a href="https://travis-ci.org/Kitura-Next/Kitura-Session">
+    <img src="https://travis-ci.org/Kitura-Next/Kitura-Session.svg?branch=master" alt="Build Status - Master">
     </a>
     <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" alt="macOS">
     <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux">
@@ -134,8 +134,8 @@
 <h2 id='usage' class='heading'>Usage</h2>
 <h4 id='add-dependencies' class='heading'>Add dependencies</h4>
 
-<p>Add the <code>Kitura-Session</code> package to the dependencies within your application’s <code>Package.swift</code> file. Substitute <code>&quot;x.x.x&quot;</code> with the latest <code>Kitura-Session</code> <a href="https://github.com/IBM-Swift/Kitura-Session/releases">release</a>.</p>
-<pre class="highlight swift"><code><span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/IBM-Swift/Kitura-Session.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"x.x.x"</span><span class="p">)</span>
+<p>Add the <code>Kitura-Session</code> package to the dependencies within your application’s <code>Package.swift</code> file. Substitute <code>&quot;x.x.x&quot;</code> with the latest <code>Kitura-Session</code> <a href="https://github.com/Kitura-Next/Kitura-Session/releases">release</a>.</p>
+<pre class="highlight swift"><code><span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/Kitura-Next/Kitura-Session.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"x.x.x"</span><span class="p">)</span>
 </code></pre>
 
 <p>Add <code>KituraSession</code> to your target&rsquo;s dependencies:</p>
@@ -172,7 +172,7 @@
 <p>The <em>secret</em> parameter is used to secure the session ID and ensure that the session ID cannot be guessed. <em>Secret</em> is used to derive a pair of encryption and signature keys via PBKDF2 and a fixed IV to make the session ID cookie be authenticated and encrypted. <em>Secret</em> isn&rsquo;t used directly to encrypt or compute the MAC of the cookie.</p>
 <h4 id='example' class='heading'>Example</h4>
 
-<p>In this example, an instance of <code>RedisStore</code> is created that will be used to persist session data (see <a href="https://github.com/IBM-Swift/Kitura-Session-Redis"><code>KituraSessionRedis</code></a> for more information).  An instance of <code><a href="Classes/Session.html">Session</a></code> is then created, specifying <em>redisStore</em> as the session store.  Finally, the <em>session</em> instance is registered as a middleware on the desired path.</p>
+<p>In this example, an instance of <code>RedisStore</code> is created that will be used to persist session data (see <a href="https://github.com/Kitura-Next/Kitura-Session-Redis"><code>KituraSessionRedis</code></a> for more information).  An instance of <code><a href="Classes/Session.html">Session</a></code> is then created, specifying <em>redisStore</em> as the session store.  Finally, the <em>session</em> instance is registered as a middleware on the desired path.</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Kitura</span>
 <span class="kd">import</span> <span class="kt">KituraSession</span>
 <span class="kd">import</span> <span class="kt">KituraSessionRedis</span>
@@ -255,12 +255,12 @@
 <h2 id='plugins' class='heading'>Plugins</h2>
 
 <ul>
-<li><a href="https://github.com/IBM-Swift/Kitura-Session-Redis">Redis store</a></li>
+<li><a href="https://github.com/Kitura-Next/Kitura-Session-Redis">Redis store</a></li>
 <li><a href="https://github.com/krzyzanowskim/Kitura-Session-Kuery">SQL store using Kuery</a> (community authored)</li>
 </ul>
 <h2 id='api-documentation' class='heading'>API Documentation</h2>
 
-<p>For more information visit our <a href="https://ibm-swift.github.io/Kitura-Session/index.html">API reference</a>.</p>
+<p>For more information visit our <a href="https://kitura-next.github.io/Kitura-Session/index.html">API reference</a>.</p>
 <h2 id='community' class='heading'>Community</h2>
 
 <p>We love to talk server-side Swift, and Kitura. Join our <a href="http://swift-at-ibm-slack.mybluemix.net/">Slack</a> to meet the team!</p>

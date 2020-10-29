@@ -1,6 +1,6 @@
 module: KituraSession
 author: IBM
-github_url: https://github.com/IBM-Swift/Kitura-Session/
+github_url: https://github.com/Kitura-Next/Kitura-Session/
 
 theme: fullwidth
 clean: true
